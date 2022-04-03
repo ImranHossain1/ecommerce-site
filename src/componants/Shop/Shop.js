@@ -33,6 +33,7 @@ const Shop = () => {
         }       
     },[products])
     const handleAddToCart = (product) =>{
+        console.log(cart)
         const exists= cart.find(pd=>pd.key === product.key);
         let newCart =[];
         if(exists){
